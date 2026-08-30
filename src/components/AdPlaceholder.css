@@ -1,0 +1,27 @@
+.ad-placeholder {
+  border: 1px dashed var(--border);
+  background: var(--surface);
+  border-radius: var(--radius);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  color: var(--muted);
+  text-align: center;
+}
+
+.ad-placeholder__eyebrow {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.ad-placeholder__dims {
+  font-size: 11.5px;
+}
+
+.ad-placeholder--medium { height: 100px; }
+.ad-placeholder--tall { height: 250px; }
+.ad-placeholder--wide { height: 90px; }

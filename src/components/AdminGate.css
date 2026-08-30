@@ -1,0 +1,51 @@
+.admin-gate {
+  padding: 96px 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.admin-gate__card {
+  max-width: 360px;
+  width: 100%;
+  text-align: center;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 40px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.admin-gate__card h1 {
+  margin-top: 4px;
+  font-size: 26px;
+}
+.admin-gate__card p {
+  color: var(--ink-soft);
+  margin-bottom: 4px;
+}
+.admin-gate__card input {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 10px 12px;
+  font-size: 14.5px;
+  color: var(--ink);
+}
+.admin-gate__card input:focus {
+  outline: none;
+  border-color: var(--pine);
+}
+.admin-gate__error {
+  color: #B23A3A;
+  font-size: 13px;
+  margin: 0;
+}
+
+.admin-gate__bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+  font-size: 14px;
+  color: var(--ink-soft);
+}

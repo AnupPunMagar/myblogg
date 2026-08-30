@@ -1,0 +1,101 @@
+.blog-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+.blog-card:hover {
+  border-color: var(--pine);
+  transform: translateY(-2px);
+}
+
+.blog-card__image-wrap {
+  display: block;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background: var(--pine-soft);
+}
+.blog-card__image-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.blog-card:hover .blog-card__image-wrap img { transform: scale(1.04); }
+
+.blog-card__body {
+  padding: 18px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+.blog-card__title {
+  font-size: 19px;
+  margin: 0;
+}
+.blog-card__title a { color: var(--ink); }
+.blog-card__title a:hover { color: var(--pine); text-decoration: none; }
+
+.blog-card__desc {
+  color: var(--ink-soft);
+  font-size: 14.5px;
+  margin: 0;
+  flex: 1;
+}
+
+.blog-card__meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+}
+
+.blog-card__date {
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.blog-card__more {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--pine);
+}
+
+/* Featured (large) variant */
+.blog-card--featured {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+}
+.blog-card--featured .blog-card__image-wrap {
+  aspect-ratio: auto;
+  height: 100%;
+}
+.blog-card--featured .blog-card__body {
+  padding: 28px 32px;
+  justify-content: center;
+}
+.blog-card--featured .blog-card__title {
+  font-size: 28px;
+}
+.blog-card--featured .blog-card__desc {
+  font-size: 15.5px;
+}
+
+@media (max-width: 720px) {
+  .blog-card--featured {
+    grid-template-columns: 1fr;
+  }
+  .blog-card--featured .blog-card__image-wrap {
+    aspect-ratio: 16 / 10;
+  }
+}

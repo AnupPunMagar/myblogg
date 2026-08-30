@@ -1,0 +1,18 @@
+.app-shell {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app-main {
+  flex: 1;
+}
+
+.not-found {
+  padding: 120px 24px;
+  text-align: center;
+}
+.not-found h1 {
+  font-size: 64px;
+  color: var(--pine);
+}
