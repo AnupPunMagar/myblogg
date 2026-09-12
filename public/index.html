@@ -4,47 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>myblogg</title>
-<style>
-  * { box-sizing: border-box; }
-  body {
-    margin: 0;
-    padding: 20px;
-    background: #0d0d0d;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    min-height: 100vh;
-  }
-  .ad-slot {
-    width: 100%;
-    max-width: 728px;
-    min-height: 90px;
-    background: #1a1a1a;
-    border: 1px dashed #444;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #666;
-    font-family: sans-serif;
-    font-size: 14px;
-  }
-  .ad-slot.large { min-height: 250px; }
-  .ad-slot.skyscraper { min-height: 600px; max-width: 160px; }
-  #btn {
-    padding: 12px 25px;
-    background: #007bff;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-#btn:hover {
-    background: #0056b3;
-}
-</style>
+<link rel="stylesheet" href="style.css">
 <script src="https://surelydecoratedfundraiser.com/b5/30/03/b5300385060065d9712da4cb89f1ceea.js"></script>
 </head>
 <body>
@@ -69,21 +29,16 @@
 <button id="btn" onclick="https://videoszone.netlify.app/">
     click Here
 </button>
-  <!-- AD SLOT 3: Large banner -->
-  <div class="ad-slot large" id="ad-slot-3" style="min-height:90px;">
-    <!-- Replace with your ad network's script/embed code -->
-    <script>
-  atOptions = {
-    'key' : '9b6dd3ed5c46889f6a5842d240ebd9fe',
-    'format' : 'iframe',
-    'height' : 90,
-    'width' : 728,
-    'params' : {}
-  };
-</script>
-<script src="https://surelydecoratedfundraiser.com/9b6dd3ed5c46889f6a5842d240ebd9fe/invoke.js"></script>
+<a href="#about" class="about-link">About Us</a>
 
-  </div>
+<section id="about" class="about-section">
+    <h2>About MyBlogg</h2>
+    <p>
+        At MyBlogg, we focus on creating simple and useful content that helps readers learn new things, discover helpful ideas, 
+        and stay informed. Our goal is to make every piece of content easy to understand, valuable, and enjoyable to read.
+    </p>
+</section>
+  <!-- AD SLOT 3: Large banner -->
 
   <!-- AD SLOT 4: Skyscraper (e.g. 160x600) -->
   <!-- AD SLOT 5: Bottom banner -->
